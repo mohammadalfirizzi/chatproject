@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="explorer.com.bismillahprojek.ActivityLogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--Top-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rellayout1">
+            <include layout="@layout/layout_atas"/>
+        </RelativeLayout>
+        <!--Tengah-->
+        <RelativeLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chatt"
+            android:layout_below="@id/rellayout1"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            tools:context="explorer.com.bismillahprojek.ActivityLogin">
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih"
+                    android:id="@+id/Buttonpilih"/>
+
+            <EditText
+                android:id="@+id/edit_textfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/Buttonpilih"
+                android:layout_toEndOf="@+id/Buttonpilih"
+                android:hint="Enter File Name"
+                android:layout_marginStart="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/image_view"
+                android:layout_below="@+id/edit_textfile"
+                android:layout_above="@+id/progress_bar"
+                android:layout_marginTop="16dp"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/button_upload"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/button_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Upload" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/showupload"
+                android:layout_alignBottom="@+id/button_upload"
+                android:layout_alignTop="@+id/button_upload"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/button_upload"
+                android:text="Show Uploads"
+                android:textSize="16sp"
+                android:gravity="center"/>
+
+        <!--Bawah-->
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
